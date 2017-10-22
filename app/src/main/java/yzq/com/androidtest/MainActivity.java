@@ -16,6 +16,7 @@ import yzq.com.androidtest.activity_luanch_mode.ActivityTestA;
 import yzq.com.androidtest.activity_recycler_view.ActivityRecyclerView;
 import yzq.com.androidtest.activity_service.ActivityTestService;
 import yzq.com.androidtest.activity_shared_preference.ActivityTestSharedPreference;
+import yzq.com.androidtest.activity_view_action.ActivityTestViewAction;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttons.add((Button) findViewById(R.id.button_test_async));
         buttons.add((Button) findViewById(R.id.button_test_shared_preference));
         buttons.add((Button) findViewById(R.id.button_recycler_view));
+        buttons.add((Button) findViewById(R.id.button_view_action));
     }
 
     @Override
@@ -74,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_recycler_view:
                 Intent recyclerIntent = new Intent(MainActivity.this, ActivityRecyclerView.class);
                 startActivity(recyclerIntent);
+                break;
+            case R.id.button_view_action:
+                Intent viewActionIntent = new Intent(MainActivity.this, ActivityTestViewAction.class);
+                startActivity(viewActionIntent);
                 break;
             default:
                 break;

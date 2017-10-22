@@ -32,7 +32,8 @@
         <activity android:name=".activity_broadcast.ActivityTestBroadcast" />
         <activity android:name=".activity_async.ActivityTestAsync" />
         <activity android:name=".activity_shared_preference.ActivityTestSharedPreference" />
-        <activity android:name=".activity_recycler_view.ActivityRecyclerView"></activity>
+        <activity android:name=".activity_recycler_view.ActivityRecyclerView" />
+        <activity android:name=".activity_view_action.ActivityTestViewAction"></activity>
     </application>
 
 </manifest>
